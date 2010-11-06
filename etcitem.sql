@@ -13,5 +13,9 @@ CREATE TABLE `etcitem` (
   `dropable` enum('TRUE','FALSE') default NULL,
   `destroyable` enum('TRUE','FALSE') default NULL,
   `tradeable` enum('TRUE','FALSE') default NULL,
+  `price_sell` INT,
+  `price_buy` INT,
+  `stackable` enum('TRUE','FALSE') default NULL,
+  
   PRIMARY KEY  (`item_id`)
 ) TYPE=MyISAM;

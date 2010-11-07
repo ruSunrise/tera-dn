@@ -1,19 +1,18 @@
 -- 
 -- Table structure for table `armor`
 -- 
-
-DROP TABLE IF EXIfgSTS `armor`;
+DROP TABLE IF EXISTS `armor`;
 CREATE TABLE `armor` (
-  `armor_id` decimal(11,0) NOT NULL default '0',
-  `needlvl` decimal(11,0) default NULL,
-  `need_prof` enum('SORCERER','PRIEST','ELEMENTALIST','LANCER','SLAYER','BERSERKER','ARCHER','WARRIOR',) default NULL,
-  `need_prof2` enum('SORCERER','PRIEST','ELEMENTALIST','LANCER','SLAYER','BERSERKER','ARCHER','WARRIOR',) default NULL,
-  `need_prof3` enum('SORCERER','PRIEST','ELEMENTALIST','LANCER','SLAYER','BERSERKER','ARCHER','WARRIOR',) default NULL,
-  `need_prof4` enum('SORCERER','PRIEST','ELEMENTALIST','LANCER','SLAYER','BERSERKER','ARCHER','WARRIOR',) default NULL,
-  `need_prof5` enum('SORCERER','PRIEST','ELEMENTALIST','LANCER','SLAYER','BERSERKER','ARCHER','WARRIOR',) default NULL,
-  `need_prof6` enum('SORCERER','PRIEST','ELEMENTALIST','LANCER','SLAYER','BERSERKER','ARCHER','WARRIOR',) default NULL,
-  `need_prof7` enum('SORCERER','PRIEST','ELEMENTALIST','LANCER','SLAYER','BERSERKER','ARCHER','WARRIOR',) default NULL,
-  `need_prof8` enum('SORCERER','PRIEST','ELEMENTALIST','LANCER','SLAYER','BERSERKER','ARCHER','WARRIOR',) default NULL,
+  `armor_id` int(11) NOT NULL default '0',
+  `needlvl` int(11) default NULL,
+  `need_prof` enum('SORCERER','PRIEST','ELEMENTALIST','LANCER','SLAYER','BERSERKER','ARCHER','WARRIOR') default NULL,
+  `need_prof2` enum('SORCERER','PRIEST','ELEMENTALIST','LANCER','SLAYER','BERSERKER','ARCHER','WARRIOR') default NULL,
+  `need_prof3` enum('SORCERER','PRIEST','ELEMENTALIST','LANCER','SLAYER','BERSERKER','ARCHER','WARRIOR') default NULL,
+  `need_prof4` enum('SORCERER','PRIEST','ELEMENTALIST','LANCER','SLAYER','BERSERKER','ARCHER','WARRIOR') default NULL,
+  `need_prof5` enum('SORCERER','PRIEST','ELEMENTALIST','LANCER','SLAYER','BERSERKER','ARCHER','WARRIOR') default NULL,
+  `need_prof6` enum('SORCERER','PRIEST','ELEMENTALIST','LANCER','SLAYER','BERSERKER','ARCHER','WARRIOR') default NULL,
+  `need_prof7` enum('SORCERER','PRIEST','ELEMENTALIST','LANCER','SLAYER','BERSERKER','ARCHER','WARRIOR') default NULL,
+  `need_prof8` enum('SORCERER','PRIEST','ELEMENTALIST','LANCER','SLAYER','BERSERKER','ARCHER','WARRIOR') default NULL,
   `defence` decimal(11,0) default NULL,
   `evasion` decimal(11,0) default NULL,
   `mp_increase` decimal(11,0) default NULL,

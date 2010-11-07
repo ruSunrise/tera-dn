@@ -16,6 +16,10 @@ CREATE TABLE IF NOT EXISTS
   `skill_effectid` INT NOT NULL default 0, -- id skill effect on datapack
  
   `skill_needlvl` INT NOT NULL default 1,
+  
+  `skill_enchantable` enum('TRUE','FALSE') default NULL,
+  
+  `skill_enchant_id` default NULL,
 
   `skill_maxlvl` varchar(5) ,
   

@@ -37,7 +37,7 @@ CREATE TABLE `npc` (
   `faction` enum('AMAN','BARAKA','CASTANIC','HIGH_ELVES','HUMAN','POPORI') DEFAULT NULL,
   `isUndead` int(11) DEFAULT '0',
   `isTrader` enum('TRUE','FALSE') DEFAULT NULL,
-  `trader_id` decimal(11,0) NOT NULL DEFAULT '0',
+  `trader_id` decimal(11,0) DEFAULT NULL,
 
 
   PRIMARY KEY (`id`)

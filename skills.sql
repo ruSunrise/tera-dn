@@ -9,6 +9,8 @@ CREATE TABLE IF NOT EXISTS
   `skill_id` INT NOT NULL default 1,
   
   `skill_race` enum('AMAN','BARAKA','CASTANIC','HIGH_ELVES','HUMAN','POPORI','ALL') default NULL,
+  
+  `skill_type` enum('DAMAGE','BUFF','AURA','AOE','EMOTION') default NULL,
 
   `text` varchar(100) default NULL,  
   
@@ -43,5 +45,5 @@ CREATE TABLE IF NOT EXISTS
 
 
 
-  PRIMARY KEY  (`skill_id`,`class_index`)
+  PRIMARY KEY  (`skill_id`,`class_index`,`skill_type`)
 ) ;

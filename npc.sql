@@ -4,7 +4,7 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 DROP TABLE IF EXISTS `npc`;
 CREATE TABLE `npc` (
-  `id` decimal(11,0) NOT NULL DEFAULT '0',
+  `npc_id` decimal(11,0) NOT NULL DEFAULT '0',
   `idTemplate` int(11) NOT NULL DEFAULT '0',
   `QuestID` int(11) NOT NULL DEFAULT '0',
   `Quest2ID` int(11) NOT NULL DEFAULT '0',
@@ -33,12 +33,12 @@ CREATE TABLE `npc` (
   `damage` int(11) DEFAULT NULL,
   `armor` int(11) DEFAULT NULL,
   `walkspd` decimal(3,0) DEFAULT NULL,
-  `type_npc` enum('NPC','MONSTER','LOBBY','BOSS','DEMON') DEFAULT NULL,
+  `type_npc` enum('NPC','MONSTER','LOBBY','BOSS') DEFAULT NULL,
   `faction` enum('AMAN','BARAKA','CASTANIC','HIGH_ELVES','HUMAN','POPORI') DEFAULT NULL,
   `isUndead` int(11) DEFAULT '0',
-  `isTrader` enum('TRUE','FALSE') DEFAULT NULL,
+  `isTrader` enum('TRUE','FALSE') NOT NULL DEFAULT 'FALSE',
   `trader_id` decimal(11,0) DEFAULT NULL,
 
 
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`npc_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;

@@ -13,5 +13,5 @@ CREATE TABLE `sets` (
   `item7_id` int(11) NOT NULL default '0',
   `special_effect` enum('TRUE','FALSE') default 'TRUE',
   `skill_id` decimal(11,0) default NULL, -- skill id for special effect
-  PRIMARY KEY  (`armor_id`)
+  PRIMARY KEY  (`set_id`)
 ) TYPE=MyISAM;

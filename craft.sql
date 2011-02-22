@@ -35,7 +35,7 @@ CREATE TABLE `craft` (
   `Ingridient14count` int(11) NOT NULL DEFAULT '0', 
     `Ingridient15id` int(11) NOT NULL DEFAULT '0',
   `Ingridient15count` int(11) NOT NULL DEFAULT '0', 
-  `CraftChance` int(11) NOT NULL DEFAULT '0', -- Craft Chance in percent
+  `CraftChance` int(11) NOT NULL DEFAULT '100', -- Craft Chance in percent
   `FinalItemID` int(11) NOT NULL DEFAULT '0', -- id crafted item
   `DisposableRecipe` enum('TRUE','FALSE') NOT NULL DEFAULT 'FALSE',
   

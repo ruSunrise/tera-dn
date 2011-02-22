@@ -9,7 +9,7 @@ CREATE TABLE `enchant` (
   `enchant_item_type` enum('ENCHANTING_CRYSTAL','FUSION_ENCHANTMENT','SKILL_ENCHANT') DEFAULT NULL,
   `enchant_item_id` decimal(11,0) default NULL, -- for skill enchant - null
   `enchanted_skill_id` decimal(11,0) default NULL, -- for armor and weapon enchanting - null
-  `damage_increase` decimal(11,0) default NULL, -- for armor and skill enchanting - null
+  `type_increase` decimal(11,0) default '0', -- type of increasing (defence increase, damage increase, etc.)
 -- -------------------
 -- AVAILABLE FOR ARMOR
 -- -------------------
